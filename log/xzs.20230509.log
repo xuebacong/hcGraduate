@@ -1,0 +1,807 @@
+2023-05-09 00:04:11.973 DEBUG 39768 --- [XNIO-1 task-499] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:04:11.976 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.QuestionMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2023-05-09 00:04:11.983 DEBUG 39768 --- [XNIO-1 task-499] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:04:11.983 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.QuestionMapper.page_COUNT      : ==> Parameters: 
+2023-05-09 00:04:11.984 DEBUG 39768 --- [XNIO-1 task-499] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:04:11.985 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.QuestionMapper.page_COUNT      : <==      Total: 1
+2023-05-09 00:04:11.986 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.repository.QuestionMapper.page   : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2023-05-09 00:04:11.986 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.repository.QuestionMapper.page   : ==> Parameters: 10(Integer)
+2023-05-09 00:04:11.988 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.repository.QuestionMapper.page   : <==      Total: 10
+2023-05-09 00:04:11.989 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.989 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 47(Integer)
+2023-05-09 00:04:11.991 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.992 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.992 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 45(Integer)
+2023-05-09 00:04:11.993 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.993 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.993 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 44(Integer)
+2023-05-09 00:04:11.994 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.994 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.994 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 43(Integer)
+2023-05-09 00:04:11.995 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.995 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.995 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 42(Integer)
+2023-05-09 00:04:11.996 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.996 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.996 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 41(Integer)
+2023-05-09 00:04:11.997 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.997 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.997 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 40(Integer)
+2023-05-09 00:04:11.997 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.998 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.998 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 38(Integer)
+2023-05-09 00:04:11.998 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.998 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.998 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 20(Integer)
+2023-05-09 00:04:11.999 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:04:11.999 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:04:11.999 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 19(Integer)
+2023-05-09 00:04:11.999 DEBUG 39768 --- [XNIO-1 task-500] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:07:49.024 DEBUG 39768 --- [XNIO-1 task-501] r.c.m.x.r.Q.selectByPrimaryKey           : ==>  Preparing: select id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted from t_question where id = ? 
+2023-05-09 00:07:49.025 DEBUG 39768 --- [XNIO-1 task-501] r.c.m.x.r.Q.selectByPrimaryKey           : ==> Parameters: 19(Integer)
+2023-05-09 00:07:49.026 DEBUG 39768 --- [XNIO-1 task-501] r.c.m.x.r.Q.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:07:49.027 DEBUG 39768 --- [XNIO-1 task-501] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:07:49.027 DEBUG 39768 --- [XNIO-1 task-501] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 47(Integer)
+2023-05-09 00:07:49.027 DEBUG 39768 --- [XNIO-1 task-501] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:09:35.350 DEBUG 39768 --- [XNIO-1 task-502] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-05-09 00:09:35.350 DEBUG 39768 --- [XNIO-1 task-502] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-05-09 00:09:35.352 DEBUG 39768 --- [XNIO-1 task-502] r.c.m.x.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-05-09 00:09:35.352 DEBUG 39768 --- [XNIO-1 task-502] r.c.m.x.repository.TaskExamMapper.page   : ==>  Preparing: SELECT id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name FROM t_task_exam WHERE deleted = 0 order by id desc LIMIT ? 
+2023-05-09 00:09:35.353 DEBUG 39768 --- [XNIO-1 task-502] r.c.m.x.repository.TaskExamMapper.page   : ==> Parameters: 10(Integer)
+2023-05-09 00:09:35.353 DEBUG 39768 --- [XNIO-1 task-502] r.c.m.x.repository.TaskExamMapper.page   : <==      Total: 2
+2023-05-09 00:09:36.560 DEBUG 39768 --- [XNIO-1 task-503] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:09:36.561 DEBUG 39768 --- [XNIO-1 task-503] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:09:36.563 DEBUG 39768 --- [XNIO-1 task-503] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:09:38.746 DEBUG 39768 --- [XNIO-1 task-504] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-05-09 00:09:38.747 DEBUG 39768 --- [XNIO-1 task-504] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-05-09 00:09:38.747 DEBUG 39768 --- [XNIO-1 task-504] r.c.m.x.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-05-09 00:09:38.748 DEBUG 39768 --- [XNIO-1 task-504] r.c.m.x.repository.TaskExamMapper.page   : ==>  Preparing: SELECT id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name FROM t_task_exam WHERE deleted = 0 order by id desc LIMIT ? 
+2023-05-09 00:09:38.748 DEBUG 39768 --- [XNIO-1 task-504] r.c.m.x.repository.TaskExamMapper.page   : ==> Parameters: 10(Integer)
+2023-05-09 00:09:38.749 DEBUG 39768 --- [XNIO-1 task-504] r.c.m.x.repository.TaskExamMapper.page   : <==      Total: 2
+2023-05-09 00:09:41.566 DEBUG 39768 --- [XNIO-1 task-505] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:09:41.566 DEBUG 39768 --- [XNIO-1 task-505] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:09:41.567 DEBUG 39768 --- [XNIO-1 task-505] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:10:27.307 DEBUG 39768 --- [XNIO-1 task-506] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-05-09 00:10:27.308 DEBUG 39768 --- [XNIO-1 task-506] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-05-09 00:10:27.309 DEBUG 39768 --- [XNIO-1 task-506] r.c.m.x.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-05-09 00:10:27.310 DEBUG 39768 --- [XNIO-1 task-506] r.c.m.x.repository.TaskExamMapper.page   : ==>  Preparing: SELECT id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name FROM t_task_exam WHERE deleted = 0 order by id desc LIMIT ? 
+2023-05-09 00:10:27.310 DEBUG 39768 --- [XNIO-1 task-506] r.c.m.x.repository.TaskExamMapper.page   : ==> Parameters: 10(Integer)
+2023-05-09 00:10:27.311 DEBUG 39768 --- [XNIO-1 task-506] r.c.m.x.repository.TaskExamMapper.page   : <==      Total: 2
+2023-05-09 00:10:28.308 DEBUG 39768 --- [XNIO-1 task-507] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:10:28.308 DEBUG 39768 --- [XNIO-1 task-507] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:10:28.308 DEBUG 39768 --- [XNIO-1 task-507] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:10:29.664 DEBUG 39768 --- [XNIO-1 task-508] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-05-09 00:10:29.665 DEBUG 39768 --- [XNIO-1 task-508] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-05-09 00:10:29.665 DEBUG 39768 --- [XNIO-1 task-508] r.c.m.x.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-05-09 00:10:29.665 DEBUG 39768 --- [XNIO-1 task-508] r.c.m.x.repository.TaskExamMapper.page   : ==>  Preparing: SELECT id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name FROM t_task_exam WHERE deleted = 0 order by id desc LIMIT ? 
+2023-05-09 00:10:29.666 DEBUG 39768 --- [XNIO-1 task-508] r.c.m.x.repository.TaskExamMapper.page   : ==> Parameters: 10(Integer)
+2023-05-09 00:10:29.666 DEBUG 39768 --- [XNIO-1 task-508] r.c.m.x.repository.TaskExamMapper.page   : <==      Total: 2
+2023-05-09 00:10:31.604 DEBUG 39768 --- [XNIO-1 task-509] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:10:31.605 DEBUG 39768 --- [XNIO-1 task-509] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:10:31.605 DEBUG 39768 --- [XNIO-1 task-509] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:10:32.648 DEBUG 39768 --- [XNIO-1 task-510] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-05-09 00:10:32.648 DEBUG 39768 --- [XNIO-1 task-510] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-05-09 00:10:32.649 DEBUG 39768 --- [XNIO-1 task-510] r.c.m.x.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-05-09 00:10:32.649 DEBUG 39768 --- [XNIO-1 task-510] r.c.m.x.repository.TaskExamMapper.page   : ==>  Preparing: SELECT id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name FROM t_task_exam WHERE deleted = 0 order by id desc LIMIT ? 
+2023-05-09 00:10:32.649 DEBUG 39768 --- [XNIO-1 task-510] r.c.m.x.repository.TaskExamMapper.page   : ==> Parameters: 10(Integer)
+2023-05-09 00:10:32.650 DEBUG 39768 --- [XNIO-1 task-510] r.c.m.x.repository.TaskExamMapper.page   : <==      Total: 2
+2023-05-09 00:14:01.528 DEBUG 39768 --- [XNIO-1 task-511] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:14:01.528 DEBUG 39768 --- [XNIO-1 task-511] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:14:01.529 DEBUG 39768 --- [XNIO-1 task-511] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:14:01.563 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.E.adminPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2023-05-09 00:14:01.563 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.E.adminPage_COUNT              : ==> Parameters: 
+2023-05-09 00:14:01.567 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.E.adminPage_COUNT              : <==      Total: 1
+2023-05-09 00:14:01.568 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.E.adminPage                    : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer order by id desc LIMIT ? 
+2023-05-09 00:14:01.568 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.E.adminPage                    : ==> Parameters: 10(Integer)
+2023-05-09 00:14:01.569 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.E.adminPage                    : <==      Total: 10
+2023-05-09 00:14:01.570 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.570 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.570 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.570 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.570 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.571 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.571 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.571 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.572 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.572 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.572 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.573 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.574 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.574 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.574 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.575 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.575 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.575 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.576 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.576 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.576 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.577 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.577 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.578 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.578 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.578 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.579 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.579 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.579 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.580 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.580 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.580 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.581 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.581 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.581 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.582 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.582 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.582 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.583 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.583 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.583 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.583 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.584 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.584 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.584 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.584 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.584 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.585 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.585 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.586 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.586 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.586 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.586 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.587 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:01.587 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:01.587 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:01.587 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:01.587 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:01.587 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:01.588 DEBUG 39768 --- [XNIO-1 task-512] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.653 DEBUG 39768 --- [XNIO-1 task-513] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:14:04.653 DEBUG 39768 --- [XNIO-1 task-513] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:14:04.654 DEBUG 39768 --- [XNIO-1 task-513] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:14:04.964 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE status = 1 
+2023-05-09 00:14:04.964 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==> Parameters: 
+2023-05-09 00:14:04.965 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.E.adminCorrectPage_COUNT       : <==      Total: 1
+2023-05-09 00:14:04.965 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.E.adminCorrectPage             : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer WHERE status = 1 order by id desc LIMIT ? 
+2023-05-09 00:14:04.965 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.E.adminCorrectPage             : ==> Parameters: 10(Integer)
+2023-05-09 00:14:04.966 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.E.adminCorrectPage             : <==      Total: 9
+2023-05-09 00:14:04.966 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.966 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.966 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.967 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.967 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.967 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.967 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.967 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.967 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.968 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.968 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.968 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.968 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.968 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.969 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.969 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.969 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.969 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.969 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.969 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.970 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.972 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.972 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.972 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.972 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.972 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.972 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.973 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.973 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.973 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.973 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.973 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.974 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.974 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.974 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.974 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.974 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.975 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.975 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.975 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:04.975 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:04.975 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:04.976 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:04.977 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:04.977 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:04.978 DEBUG 39768 --- [XNIO-1 task-514] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.289 DEBUG 39768 --- [XNIO-1 task-515] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:14:10.289 DEBUG 39768 --- [XNIO-1 task-515] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:14:10.290 DEBUG 39768 --- [XNIO-1 task-515] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:14:10.328 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.E.adminPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2023-05-09 00:14:10.328 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.E.adminPage_COUNT              : ==> Parameters: 
+2023-05-09 00:14:10.330 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.E.adminPage_COUNT              : <==      Total: 1
+2023-05-09 00:14:10.331 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.E.adminPage                    : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer order by id desc LIMIT ? 
+2023-05-09 00:14:10.331 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.E.adminPage                    : ==> Parameters: 10(Integer)
+2023-05-09 00:14:10.332 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.E.adminPage                    : <==      Total: 10
+2023-05-09 00:14:10.332 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.332 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.332 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.332 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.332 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.333 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.333 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.333 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.333 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.333 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.334 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.334 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.334 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.334 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.335 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.335 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.335 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.335 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.335 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.335 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.336 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.336 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.336 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.336 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.336 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.336 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.337 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.337 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.337 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.338 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.338 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.338 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.339 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.339 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.339 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.340 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.340 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.340 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.341 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.342 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.342 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.343 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.343 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.343 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.344 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.344 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.344 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.345 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.345 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.345 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.345 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.345 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.345 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.346 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:10.346 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:10.346 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:10.346 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:10.346 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:10.346 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:10.347 DEBUG 39768 --- [XNIO-1 task-516] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.121 DEBUG 39768 --- [XNIO-1 task-517] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:14:11.121 DEBUG 39768 --- [XNIO-1 task-517] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:14:11.122 DEBUG 39768 --- [XNIO-1 task-517] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:14:11.428 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE status = 1 
+2023-05-09 00:14:11.428 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==> Parameters: 
+2023-05-09 00:14:11.429 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.E.adminCorrectPage_COUNT       : <==      Total: 1
+2023-05-09 00:14:11.429 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.E.adminCorrectPage             : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer WHERE status = 1 order by id desc LIMIT ? 
+2023-05-09 00:14:11.429 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.E.adminCorrectPage             : ==> Parameters: 10(Integer)
+2023-05-09 00:14:11.430 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.E.adminCorrectPage             : <==      Total: 9
+2023-05-09 00:14:11.430 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.430 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.431 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.431 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.431 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.431 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.431 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.431 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.432 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.432 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.432 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.432 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.432 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.433 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.433 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.433 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.433 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.433 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.434 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.434 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.434 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.434 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.434 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.434 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.435 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.435 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.435 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.435 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.435 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.436 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.436 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.436 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.436 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.436 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.436 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.437 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.437 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.437 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.437 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.437 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.437 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.438 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.438 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.438 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.438 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.438 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.438 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.439 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:14:11.439 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:14:11.439 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:14:11.439 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:14:11.439 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:14:11.440 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:14:11.440 DEBUG 39768 --- [XNIO-1 task-518] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.630 DEBUG 39768 --- [XNIO-1 task-519] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:16:15.631 DEBUG 39768 --- [XNIO-1 task-519] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:16:15.632 DEBUG 39768 --- [XNIO-1 task-519] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:16:15.640 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.E.adminPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2023-05-09 00:16:15.640 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.E.adminPage_COUNT              : ==> Parameters: 
+2023-05-09 00:16:15.642 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.E.adminPage_COUNT              : <==      Total: 1
+2023-05-09 00:16:15.644 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.E.adminPage                    : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer order by id desc LIMIT ? 
+2023-05-09 00:16:15.644 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.E.adminPage                    : ==> Parameters: 10(Integer)
+2023-05-09 00:16:15.646 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.E.adminPage                    : <==      Total: 10
+2023-05-09 00:16:15.647 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.647 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.648 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.648 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.648 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.649 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.650 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.650 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.650 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.650 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.650 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.651 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.651 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.651 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.652 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.652 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.652 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.652 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.653 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.653 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.653 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.653 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.653 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.654 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.654 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.654 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.654 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.655 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.655 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.655 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.655 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.655 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.656 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.656 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.656 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.656 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.656 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.656 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.657 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.657 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.657 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.657 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.658 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.658 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.658 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.658 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.658 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.658 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.659 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.659 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.659 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.660 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.660 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.660 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:15.661 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:15.661 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:15.662 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:15.663 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:15.663 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:15.663 DEBUG 39768 --- [XNIO-1 task-520] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.556 DEBUG 39768 --- [XNIO-1 task-521] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:16:28.556 DEBUG 39768 --- [XNIO-1 task-521] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:16:28.557 DEBUG 39768 --- [XNIO-1 task-521] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:16:28.865 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE status = 1 
+2023-05-09 00:16:28.867 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==> Parameters: 
+2023-05-09 00:16:28.867 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.E.adminCorrectPage_COUNT       : <==      Total: 1
+2023-05-09 00:16:28.867 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.E.adminCorrectPage             : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer WHERE status = 1 order by id desc LIMIT ? 
+2023-05-09 00:16:28.867 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.E.adminCorrectPage             : ==> Parameters: 10(Integer)
+2023-05-09 00:16:28.868 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.E.adminCorrectPage             : <==      Total: 9
+2023-05-09 00:16:28.868 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.868 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.869 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.869 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.869 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.869 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.870 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.870 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.870 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.870 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.870 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.871 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.871 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.871 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.871 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.871 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.871 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.872 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.872 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.872 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.873 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.873 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.873 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.874 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.875 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.875 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.876 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.876 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.876 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.876 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.876 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.877 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.877 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.877 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.877 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.878 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.878 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.878 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.878 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.879 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.879 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.880 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.880 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.880 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.880 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.881 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.881 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.881 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:28.881 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:28.881 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:28.882 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:28.882 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:28.882 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:28.882 DEBUG 39768 --- [XNIO-1 task-522] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:31.283 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : ==>  Preparing: select id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id from t_exam_paper_answer where id = ? 
+2023-05-09 00:16:31.283 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : ==> Parameters: 22(Integer)
+2023-05-09 00:16:31.285 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:31.286 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : ==>  Preparing: select id, name, subject_id, paper_type, grade_level, score, question_count, suggest_time, limit_start_time, limit_end_time, frame_text_content_id, create_user, create_time, deleted, task_exam_id from t_exam_paper where id = ? 
+2023-05-09 00:16:31.286 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : ==> Parameters: 10(Integer)
+2023-05-09 00:16:31.288 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:31.289 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:16:31.290 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 34(Integer)
+2023-05-09 00:16:31.293 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:31.300 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.QuestionMapper.selectByIds     : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question where id in ( ? , ? ) 
+2023-05-09 00:16:31.300 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.QuestionMapper.selectByIds     : ==> Parameters: 5(Integer), 6(Integer)
+2023-05-09 00:16:31.303 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.QuestionMapper.selectByIds     : <==      Total: 2
+2023-05-09 00:16:31.308 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:16:31.309 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 5(Integer)
+2023-05-09 00:16:31.310 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:31.311 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:16:31.311 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 9(Integer)
+2023-05-09 00:16:31.312 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:31.313 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : ==>  Preparing: select id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id from t_exam_paper_answer where id = ? 
+2023-05-09 00:16:31.313 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : ==> Parameters: 22(Integer)
+2023-05-09 00:16:31.314 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:31.314 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectListByPaperAnswerId    : ==>  Preparing: select id, question_id, exam_paper_id, exam_paper_answer_id, question_type, subject_id, customer_score, question_score, question_text_content_id, answer, text_content_id, do_right, create_user, create_time, item_order from t_exam_paper_question_customer_answer where exam_paper_answer_id = ? order by item_order 
+2023-05-09 00:16:31.314 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectListByPaperAnswerId    : ==> Parameters: 22(Integer)
+2023-05-09 00:16:31.317 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.E.selectListByPaperAnswerId    : <==      Total: 2
+2023-05-09 00:16:31.317 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2023-05-09 00:16:31.317 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 55(Integer)
+2023-05-09 00:16:31.318 DEBUG 39768 --- [XNIO-1 task-523] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:34.827 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.selectByPrimaryKey           : ==>  Preparing: select id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id from t_exam_paper_answer where id = ? 
+2023-05-09 00:16:34.827 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.selectByPrimaryKey           : ==> Parameters: 22(Integer)
+2023-05-09 00:16:34.828 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:34.842 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.selectByPrimaryKey           : ==>  Preparing: select id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id from t_exam_paper_answer where id = ? 
+2023-05-09 00:16:34.842 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.selectByPrimaryKey           : ==> Parameters: 22(Integer)
+2023-05-09 00:16:34.842 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:34.844 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.updateByPrimaryKeySelective  : ==>  Preparing: update t_exam_paper_answer SET exam_paper_id = ?, paper_name = ?, paper_type = ?, subject_id = ?, system_score = ?, user_score = ?, paper_score = ?, question_correct = ?, question_count = ?, do_time = ?, status = ?, create_user = ?, create_time = ? where id = ? 
+2023-05-09 00:16:34.845 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.updateByPrimaryKeySelective  : ==> Parameters: 10(Integer), 高三语文04231720(String), 1(Integer), 1(Integer), 0(Integer), 0(Integer), 100(Integer), 0(Integer), 2(Integer), 1(Integer), 2(Integer), 4(Integer), 2023-05-07 19:48:07.0(Timestamp), 22(Integer)
+2023-05-09 00:16:34.847 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.updateByPrimaryKeySelective  : <==    Updates: 1
+2023-05-09 00:16:34.849 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.updateScore                  : ==>  Preparing: update t_exam_paper_question_customer_answer set customer_score=? , do_right=? where id=? ; 
+2023-05-09 00:16:34.850 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.updateScore                  : ==> Parameters: 0(Integer), false(Boolean), 60(Integer)
+2023-05-09 00:16:34.850 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.E.updateScore                  : <==    Updates: 1
+2023-05-09 00:16:34.856 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-05-09 00:16:34.856 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-05-09 00:16:34.857 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-05-09 00:16:34.859 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2023-05-09 00:16:34.860 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 批改试卷：高三语文04231720 得分：0(String), 2023-05-09 00:16:34.858(Timestamp)
+2023-05-09 00:16:34.862 DEBUG 39768 --- [XNIO-1 task-524] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2023-05-09 00:16:35.827 DEBUG 39768 --- [XNIO-1 task-525] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:16:35.827 DEBUG 39768 --- [XNIO-1 task-525] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:16:35.828 DEBUG 39768 --- [XNIO-1 task-525] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:16:35.828 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE status = 1 
+2023-05-09 00:16:35.828 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==> Parameters: 
+2023-05-09 00:16:35.830 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.E.adminCorrectPage_COUNT       : <==      Total: 1
+2023-05-09 00:16:35.831 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.E.adminCorrectPage             : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer WHERE status = 1 order by id desc LIMIT ? 
+2023-05-09 00:16:35.831 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.E.adminCorrectPage             : ==> Parameters: 10(Integer)
+2023-05-09 00:16:35.832 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.E.adminCorrectPage             : <==      Total: 8
+2023-05-09 00:16:35.832 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.833 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.833 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.833 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.833 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.835 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.835 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.835 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.836 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.836 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.836 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.837 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.837 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.838 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.839 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.839 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.840 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.840 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.841 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.841 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.841 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.841 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.841 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.842 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.842 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.842 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.843 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.843 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.843 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.843 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.844 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.844 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.844 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.845 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.845 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.845 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.845 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.846 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.846 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.846 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.846 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.847 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:35.847 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:35.847 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:35.848 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:35.848 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:35.848 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:35.848 DEBUG 39768 --- [XNIO-1 task-526] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.295 DEBUG 39768 --- [XNIO-1 task-527] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:16:39.295 DEBUG 39768 --- [XNIO-1 task-527] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:16:39.296 DEBUG 39768 --- [XNIO-1 task-527] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:16:39.297 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.E.adminPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2023-05-09 00:16:39.297 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.E.adminPage_COUNT              : ==> Parameters: 
+2023-05-09 00:16:39.298 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.E.adminPage_COUNT              : <==      Total: 1
+2023-05-09 00:16:39.299 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.E.adminPage                    : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer order by id desc LIMIT ? 
+2023-05-09 00:16:39.299 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.E.adminPage                    : ==> Parameters: 10(Integer)
+2023-05-09 00:16:39.301 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.E.adminPage                    : <==      Total: 10
+2023-05-09 00:16:39.301 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.301 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.302 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.302 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.302 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.303 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.303 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.303 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.304 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.304 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.304 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.305 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.305 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.305 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.306 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.306 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.306 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.307 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.307 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.307 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.308 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.308 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.308 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.308 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.309 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.309 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.309 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.309 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.309 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.310 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.311 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.311 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.311 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.311 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.311 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.312 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.312 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.312 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.312 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.313 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.313 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.313 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.313 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.313 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.314 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.314 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.314 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.315 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.315 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.315 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.316 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.316 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.316 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.316 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:39.317 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:39.317 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:39.317 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:39.317 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:39.317 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:39.318 DEBUG 39768 --- [XNIO-1 task-528] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.587 DEBUG 39768 --- [XNIO-1 task-529] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:16:40.587 DEBUG 39768 --- [XNIO-1 task-529] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:16:40.587 DEBUG 39768 --- [XNIO-1 task-529] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:16:40.620 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE status = 1 
+2023-05-09 00:16:40.620 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.E.adminCorrectPage_COUNT       : ==> Parameters: 
+2023-05-09 00:16:40.621 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.E.adminCorrectPage_COUNT       : <==      Total: 1
+2023-05-09 00:16:40.622 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.E.adminCorrectPage             : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer WHERE status = 1 order by id desc LIMIT ? 
+2023-05-09 00:16:40.622 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.E.adminCorrectPage             : ==> Parameters: 10(Integer)
+2023-05-09 00:16:40.623 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.E.adminCorrectPage             : <==      Total: 8
+2023-05-09 00:16:40.623 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.623 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.624 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.624 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.624 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.624 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.625 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.625 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.625 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.625 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.625 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.626 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.626 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.626 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.626 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.626 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.626 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.627 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.627 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.627 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.627 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.627 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.627 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.628 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.628 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.628 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.628 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.628 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.628 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.629 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.629 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.629 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.629 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.629 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.629 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.630 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.630 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.630 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.631 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.631 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.631 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.631 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:16:40.632 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:16:40.632 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:16:40.632 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:16:40.632 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:16:40.632 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:16:40.633 DEBUG 39768 --- [XNIO-1 task-530] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.622 DEBUG 39768 --- [XNIO-1 task-531] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2023-05-09 00:21:31.622 DEBUG 39768 --- [XNIO-1 task-531] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-05-09 00:21:31.623 DEBUG 39768 --- [XNIO-1 task-531] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 6
+2023-05-09 00:21:31.641 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.E.adminPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2023-05-09 00:21:31.642 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.E.adminPage_COUNT              : ==> Parameters: 
+2023-05-09 00:21:31.644 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.E.adminPage_COUNT              : <==      Total: 1
+2023-05-09 00:21:31.644 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.E.adminPage                    : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer order by id desc LIMIT ? 
+2023-05-09 00:21:31.644 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.E.adminPage                    : ==> Parameters: 10(Integer)
+2023-05-09 00:21:31.645 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.E.adminPage                    : <==      Total: 10
+2023-05-09 00:21:31.645 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.645 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.646 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.646 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.646 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.646 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.646 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.646 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.647 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.647 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.647 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.647 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.648 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.648 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.649 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.649 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.650 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.650 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.651 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.651 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.651 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.651 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.651 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.652 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.652 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.652 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.652 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.652 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.652 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.653 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.653 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.653 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.653 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.654 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.654 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.654 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.654 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.654 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.655 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.655 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.655 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.655 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.655 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.655 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.656 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.656 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.656 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.656 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.656 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.656 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.657 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.657 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.657 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.657 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:21:31.657 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-05-09 00:21:31.657 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-05-09 00:21:31.658 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-05-09 00:21:31.658 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-05-09 00:21:31.658 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 4(Integer)
+2023-05-09 00:21:31.658 DEBUG 39768 --- [XNIO-1 task-532] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-05-09 00:24:12.474 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.x.r.MessageMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_message 
+2023-05-09 00:24:12.475 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.x.r.MessageMapper.page_COUNT       : ==> Parameters: 
+2023-05-09 00:24:12.478 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.x.r.MessageMapper.page_COUNT       : <==      Total: 1
+2023-05-09 00:24:12.478 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.xzs.repository.MessageMapper.page  : ==>  Preparing: SELECT id, title, content, create_time, send_user_id, send_user_name, send_real_name, receive_user_count, read_count FROM t_message order by id desc LIMIT ? 
+2023-05-09 00:24:12.479 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.xzs.repository.MessageMapper.page  : ==> Parameters: 10(Integer)
+2023-05-09 00:24:12.479 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.xzs.repository.MessageMapper.page  : <==      Total: 2
+2023-05-09 00:24:12.480 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.x.r.M.selectByMessageIds           : ==>  Preparing: select id, message_id, receive_user_id, receive_user_name, receive_real_name, readed, create_time, read_time from t_message_user where message_id in ( ? , ? ) 
+2023-05-09 00:24:12.480 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.x.r.M.selectByMessageIds           : ==> Parameters: 2(Integer), 1(Integer)
+2023-05-09 00:24:12.481 DEBUG 39768 --- [XNIO-1 task-533] r.c.m.x.r.M.selectByMessageIds           : <==      Total: 3
+2023-05-09 00:24:20.053 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.x.r.MessageMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_message 
+2023-05-09 00:24:20.053 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.x.r.MessageMapper.page_COUNT       : ==> Parameters: 
+2023-05-09 00:24:20.054 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.x.r.MessageMapper.page_COUNT       : <==      Total: 1
+2023-05-09 00:24:20.055 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.xzs.repository.MessageMapper.page  : ==>  Preparing: SELECT id, title, content, create_time, send_user_id, send_user_name, send_real_name, receive_user_count, read_count FROM t_message order by id desc LIMIT ? 
+2023-05-09 00:24:20.055 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.xzs.repository.MessageMapper.page  : ==> Parameters: 10(Integer)
+2023-05-09 00:24:20.056 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.xzs.repository.MessageMapper.page  : <==      Total: 2
+2023-05-09 00:24:20.056 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.x.r.M.selectByMessageIds           : ==>  Preparing: select id, message_id, receive_user_id, receive_user_name, receive_real_name, readed, create_time, read_time from t_message_user where message_id in ( ? , ? ) 
+2023-05-09 00:24:20.057 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.x.r.M.selectByMessageIds           : ==> Parameters: 2(Integer), 1(Integer)
+2023-05-09 00:24:20.057 DEBUG 39768 --- [XNIO-1 task-534] r.c.m.x.r.M.selectByMessageIds           : <==      Total: 3
+2023-05-09 00:25:55.512 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.x.r.MessageMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_message 
+2023-05-09 00:25:55.513 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.x.r.MessageMapper.page_COUNT       : ==> Parameters: 
+2023-05-09 00:25:55.515 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.x.r.MessageMapper.page_COUNT       : <==      Total: 1
+2023-05-09 00:25:55.515 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.xzs.repository.MessageMapper.page  : ==>  Preparing: SELECT id, title, content, create_time, send_user_id, send_user_name, send_real_name, receive_user_count, read_count FROM t_message order by id desc LIMIT ? 
+2023-05-09 00:25:55.515 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.xzs.repository.MessageMapper.page  : ==> Parameters: 10(Integer)
+2023-05-09 00:25:55.516 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.xzs.repository.MessageMapper.page  : <==      Total: 2
+2023-05-09 00:25:55.517 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.x.r.M.selectByMessageIds           : ==>  Preparing: select id, message_id, receive_user_id, receive_user_name, receive_real_name, readed, create_time, read_time from t_message_user where message_id in ( ? , ? ) 
+2023-05-09 00:25:55.517 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.x.r.M.selectByMessageIds           : ==> Parameters: 2(Integer), 1(Integer)
+2023-05-09 00:25:55.517 DEBUG 39768 --- [XNIO-1 task-535] r.c.m.x.r.M.selectByMessageIds           : <==      Total: 3
